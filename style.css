@@ -17,8 +17,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Para selecionar Tags apenas escrever tag| para selecioanar classes .nomedaclasse*/
-.container-grid{
+.container-grid {
     /* Pode ser 80vw*/
     width: 80%;
     max-width: 1400px;
@@ -51,7 +52,7 @@ header img {
     width: 234px;
 }
 
-header .container-grid{
+header .container-grid {
     height: 100%;
 
     /* Priimeiro tem que tornar flex*/
@@ -59,6 +60,7 @@ header .container-grid{
     justify-content: space-between;
     align-items: center;
 }
+
 /* Para ser mais especifico pode ser nav.menu */
 .menu {
     display: flex;
@@ -68,21 +70,22 @@ header .container-grid{
 
 /* Dentro da tag Menu estou selecionando todos os as*/
 .menu a {
-    font-family:'Anta';
+    font-family: 'Anta';
     font-size: 18px;
     text-decoration: underline transparent;
     text-decoration-thickness: 2px;
     color: white;
-/* Transition - normalmente serve para criar animações de transição*/
+    /* Transition - normalmente serve para criar animações de transição*/
     transition: text-decoration 500ms ease;
 }
-.menu a:hover{
+
+.menu a:hover {
     text-decoration-color: white;
 }
 
-.conteudo-banner{
+.conteudo-banner {
     height: calc(100vh - 280px);
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 
@@ -102,12 +105,13 @@ header .container-grid{
     justify-content: space-between;
 }
 
-h2{
-    font-size: 28px ;
+h2 {
+    font-size: 28px;
     font-family: "Anta";
 }
-#sobre p{
-    font-size: 17px ;
+
+#sobre p {
+    font-size: 17px;
     text-align: left;
     font-family: "Montserrat";
     line-height: 1.5;
@@ -143,7 +147,7 @@ h2{
     padding-bottom: 20px;
     margin-bottom: 40px;
 
-    box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .card img {
@@ -169,7 +173,7 @@ h2{
 
     border: none;
     border-radius: 4px;
-    
+
     font-family: 'montserrat';
     font-size: 17px;
     font-weight: 600;
@@ -182,7 +186,7 @@ h2{
     background-color: #ad4929;
 }
 
-#portfolio{
+#portfolio {
     height: 250px;
 
     background-image: url(img/Bonecos.png);
@@ -193,18 +197,18 @@ h2{
     margin-bottom: 120px;
 }
 
-.filtro{
+.filtro {
     width: 100%;
     height: 100%;
     background: #47208bc2;
-    
+
     position: absolute;
     top: 0;
     left: 0;
 }
 
 
-#portfolio .container-grid{
+#portfolio .container-grid {
     height: 100%;
 
     display: flex;
@@ -212,12 +216,12 @@ h2{
     justify-content: center;
 }
 
-#portfolio a{
+#portfolio a {
 
     width: fit-content;
 
     color: white;
-    
+
     font-family: 'anta';
     font-size: 28px;
 
@@ -226,24 +230,24 @@ h2{
     transition: 200ms;
 }
 
-#portfolio a:hover{
+#portfolio a:hover {
 
     transform: scale(1.05);
     transition: 200ms;
 }
 
-#contato{
+#contato {
 
     text-align: center;
     padding-bottom: 100px;
     margin-bottom: 100px;
 }
 
-#contato h2{
+#contato h2 {
     margin-bottom: 70px;
 }
 
-#contato form{
+#contato form {
     width: 50%;
 
     margin: 0 auto;
@@ -261,7 +265,7 @@ h2{
     font-size: 17px;
 }
 
-.campo{
+.campo {
     width: 60%;
 
     text-align: left;
@@ -273,7 +277,7 @@ h2{
     margin-bottom: 50px;
 }
 
-.campo-descricao{
+.campo-descricao {
     width: 60%;
 
     text-align: left;
@@ -285,7 +289,7 @@ h2{
     margin-bottom: 30px;
 }
 
-.campo input{
+.campo input {
 
     height: 40px;
 
@@ -300,7 +304,7 @@ h2{
     text-indent: 10px
 }
 
-.campo-descricao textarea{
+.campo-descricao textarea {
 
     color: white;
     background-color: #351868;
@@ -315,10 +319,96 @@ h2{
     padding: 10px;
 }
 
-.campo label, .campo-descricao label{
+.campo label,
+.campo-descricao label {
     margin-bottom: 15px;
 }
 
 
+.campo input,
+.campo-descricao textarea {
+    font-family: 'Montserrat';
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #b9b9b9;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--laranja-gamifica);
+}
 
 
+#contato form button {
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--laranja-gamifica);
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: background-color 500ms;
+}
+
+#contato form button:hover {
+    background-color: #ad4929;
+}
+
+footer {
+    height: 290px;
+
+    background-color: var(--roxo-gamifica);
+}
+
+footer .container-grid{
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais{
+    height: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: flex-end;
+}
+
+.redes-sociais p{
+    color: white;
+
+    font-family: 'anta';
+    font-size: 24px;
+}
+
+.icones-redes{
+    width: 240px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes a{
+    color: white;
+    transition: color 500ms;
+}
+
+.icones-redes a:hover{
+    color: var(--laranja-gamifica);
+}
