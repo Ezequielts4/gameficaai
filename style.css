@@ -459,6 +459,12 @@ footer .container-grid {
     color: var(--laranja-gamifica);
 }
 
+/* responsividade - responsividade - responsividade - responsividade - responsividade - responsividade */
+
+.menu-fechado{
+display: none;
+}
+
 @media screen and (max-width: 1300px) {
     header {
         position: relative;
