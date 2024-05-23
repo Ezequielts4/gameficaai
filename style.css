@@ -66,16 +66,42 @@ html {
     position: absolute;
 }
 
-#botao-voltar svg, #botao-proximo svg{
+#botao-voltar svg, #botao-proximo svg {
     fill: #ffffff76;
 }
 
-#botao-voltar{
+#botao-voltar {
     left: 4%;
 }
 
-#botao-proximo{
+#botao-proximo {
     right: 4%;
+}
+
+.botoes {
+    width: 150px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    bottom: 4%;
+    left: calc(50% - 75px);
+}
+
+.botoes button {
+    width: 30px;
+
+    display: unset;
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.botoes button svg{
+    fill: #ffffff76;
 }
 
 header {

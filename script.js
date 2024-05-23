@@ -59,14 +59,48 @@ let slideAtual = 0;
 banner.classList.add(slides[slideAtual])
 
 function mostrarProximoSlide() {
+
     // remove o slide atual
     banner.classList.remove(slides[slideAtual])
 
-    // somar 1 na variavel slideAtual
-    slideAtual++;
+    if (slideAtual < 2) 
+    {
+        slideAtual++;
+    }
+
+    else
+    {
+        slideAtual = 0;
+    }
 
     // mostrar slide de acordo com o slide atual
     banner.classList.add(slides[slideAtual])
-
 }
 
+
+function mostrarSlideAnterior() {
+
+    // remove o slide atual
+    banner.classList.remove(slides[slideAtual])
+
+    if (slideAtual > 0) 
+    {
+        slideAtual--;
+    }
+
+    else
+    {
+        slideAtual = 2;
+    }
+
+    // mostrar slide de acordo com o slide atual
+    banner.classList.add(slides[slideAtual])
+}
+
+function selecionarSlide(indiceSlide) {
+    banner.classList.remove(slides[slideAtual])
+
+    slideAtual = indiceSlide;
+
+    banner.classList.add(slides[slideAtual])
+}
